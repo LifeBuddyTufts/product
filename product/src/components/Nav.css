@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'cherry';
+    src: local('CherryBombOne-Regular'),
+         url('./fonts/CherryBombOne-Regular.ttf') format('ttf'), 
+} 
+#Nav {
+    padding: 3em 7em 3em 7em;
+    background-color: #FBE0DB;
+}
+h1 {
+    margin: 0;
+    float: right;
+    font-family: 'cherry';
+}

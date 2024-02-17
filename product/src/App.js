@@ -1,37 +1,15 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Nav from './components/Nav.js';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
+import Home from './pages/Home.js';
+
 
 function App() {
   // const value = 1;
   return (
     <div className="App">
-      <div>
-        <Nav>
-         </Nav>
-        <Tabs aria-label="basic tabs example">
-          <Tab label="Item One" />
-          <Tab label="Item Two" />
-          <Tab label="Item Three" />
-        </Tabs>
-      </div>
+
+      <Home></Home>
       
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }
