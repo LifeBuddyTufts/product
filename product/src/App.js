@@ -1,11 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import { Nav } from './components/na'
+import Nav from './components/Nav.js';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 
 function App() {
+  // const value = 1;
   return (
     <div className="App">
-      <Nav name={"josh"} ></Nav>
+      <div>
+        <Nav>
+         </Nav>
+        <Tabs aria-label="basic tabs example">
+          <Tab label="Item One" />
+          <Tab label="Item Two" />
+          <Tab label="Item Three" />
+        </Tabs>
+      </div>
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

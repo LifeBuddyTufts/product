@@ -4,8 +4,13 @@ import React from 'react'; // Import React library
 function Nav(props) {
   return (
     <div>
-      <h1>Hello, {props.name}!</h1>
+      <h1>Life Buddy</h1>
       <p>This is a simple React component.</p>
+      <ul>
+        <li>Home</li>
+        <li>Buddies</li>
+        <li>Contact</li>
+      </ul>
     </div>
   );
 }
