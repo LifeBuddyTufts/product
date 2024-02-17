@@ -1,16 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Nav.js';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
 
 function App() {
-  // const value = 1;
   return (
     <div className="App">
       <div>
         <Nav>
-         </Nav>
+        </Nav>
       </div>
       
       <header className="App-header">

@@ -1,13 +1,16 @@
 import React from 'react'; // Import React library
+import './Nav.css';import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 
 // Define a functional component
 function Nav(props) {
   return (
     <div>
       <Tabs aria-label="basic tabs example">
-          <Tab label="Item One" />
-          <Tab label="Item Two" />
-          <Tab label="Item Three" />
+          <Tab label="Home" />
+        <Tab bel="Buddies" />
+      <divlabel="Buddies" />
+          <Tab label="Contact" />
         </Tabs>
     </div>
   );
