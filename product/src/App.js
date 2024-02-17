@@ -11,11 +11,6 @@ function App() {
       <div>
         <Nav>
          </Nav>
-        <Tabs aria-label="basic tabs example">
-          <Tab label="Item One" />
-          <Tab label="Item Two" />
-          <Tab label="Item Three" />
-        </Tabs>
       </div>
       
       <header className="App-header">
