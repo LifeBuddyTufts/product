@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import { Nav } from './components/na'
+// import { Nav } from './components/na'
 
 function App() {
   return (
     <div className="App">
-      <Nav name={"josh"} ></Nav>
+      {/* <Nav name={"josh"} ></Nav> */}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
