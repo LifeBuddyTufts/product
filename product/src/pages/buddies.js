@@ -1,10 +1,11 @@
 import {React, useState} from 'react';
 // import Form from '../components/post/Form.js';
 import Search from '../components/Search.js';
-import AddSesh from '../components/AddSesh.js';
+// import AddSesh from '../components/AddSesh.js';
 import FilterBtn from '../components/FilterBtn.js';
 import PostCard from '../components/post/PostCard';
 import Calendar from 'react-calendar';
+import Modal from '../components/Modal.js';
 import sarah from '../components/assets/Group 17.png';
 import lilian from '../components/assets/Group 17 (2).png';
 import keiji from '../components/assets/Group 17 (4).png';
@@ -12,6 +13,9 @@ import kiki from '../components/assets/Group 17 (5).png';
 // import ExampleGrid from '../components/post/grid';
 import 'react-calendar/dist/Calendar.css';
 import './Buddies.css'
+import plus from '../components/assets/plus.png';
+import '../components/AddSesh.css';
+
 
 
 function Buddies() {        
@@ -19,16 +23,35 @@ function Buddies() {
     const changeDate = (e) => {
         setDateState(e)
     }
-    // const handleClick = () => {
-    //     // Define your click handling logic here
-    //     console.log('Button clicked!');
-    // }
+    const [showModal, setShowModal] = useState(false);
+
+    const handleClick = () => {
+        setShowModal(true);
+        document.body.style.overflow = 'hidden';
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+        document.body.style.overflow = 'auto';
+    };
     return (
         <div>
             <div id = "pad">
             </div>
             <Search/>
-            <AddSesh/>
+            {/* <AddSesh/> */}
+            <button 
+                id="add"   
+                type="submit" 
+                onClick={handleClick}>
+                <span>
+                    <img id = "plus" src={plus} alt = 'plus icon'/>
+                    <span id="btn-txt">Add a study sesh</span>
+                </span>
+            </button>
+            {showModal && <Modal onClose={handleCloseModal} />}
+
+
             <div id="filter-btn-div">
                 <FilterBtn label="classes"/>
                 <FilterBtn label="time"/>
