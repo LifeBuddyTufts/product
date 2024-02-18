@@ -30,8 +30,8 @@ function PostCard() {
 
     return (
 
-        <div id="card">            
-            <h1 id="title" value="name">Hello</h1>
+        <div className="card">            
+            {/* <div></div> id="title" value="name">Hello</h1> */}
 
             {/* <span value={item.name}></span>  */}
         </div>

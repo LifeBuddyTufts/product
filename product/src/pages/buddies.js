@@ -1,5 +1,6 @@
 import {React, useState} from 'react';
 // import Form from '../components/post/Form.js';
+import PostCard from '../components/post/PostCard';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import './Buddies.css'
@@ -17,6 +18,8 @@ function Buddies() {
             {/* <Form></Form> */}
             <Calendar value={dateState}
             onChange={changeDate} id="cal"/>
+            {/* <Form></Form> */}
+            <PostCard></PostCard>
         </div>
     );
 }

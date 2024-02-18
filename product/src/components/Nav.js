@@ -1,38 +1,11 @@
-// import React, { useState } from 'react';
-// import { useNavigate, Route, Routes, Link } from 'react-router-dom';
 import './Nav.css';
 import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 import Home from '../pages/Home.js';
-import Buddies from '../pages/Buddies.js';
+import Buddies from '../pages/buddies.js';
 import pup from './assets/pup.png';
-
-
-// import Tabs from '@mui/material/Tabs';
-// import Tab from '@mui/material/Tab';
   
 
 function Nav(props) {
-//   const [value, setValue] = useState(0); // State to manage active tab
-//   const history = useNavigate(); // Get history object from useHistory hook
-
-
-//   const handleChange = (event, newValue) => {
-//     setValue(newValue); // Update active tab
-//     // Navigate to corresponding route based on tab index
-//     switch (newValue) {
-//       case 0:
-//         history.push('/home');
-//         break;
-//       case 1:
-//         history.push('/buddies');
-//         break;
-//       case 2:
-//         history.push('/contact');
-//         break;
-//       default:
-//         break;
-//     }
-//   };
   return (
     <div id = "Nav">
         <div id = "title">

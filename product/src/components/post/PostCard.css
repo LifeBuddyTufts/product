@@ -4,7 +4,7 @@
        url('../fonts/CherryBombOne-Regular.ttf') format('ttf'), 
 }  */
 
-#card {
+.card {
     position: relative;
     width: 432px;
     height: 405px;
