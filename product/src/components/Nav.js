@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { useNavigate, Route, Routes, Link } from 'react-router-dom';
-import './Nav.css';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
+// import React, { useState } from 'react';
+// import { useNavigate, Route, Routes, Link } from 'react-router-dom';
+// import './Nav.css';
+// import Tabs from '@mui/material/Tabs';
+// import Tab from '@mui/material/Tab';
   
 
 // function Nav(props) {
@@ -40,10 +40,10 @@ import Tab from '@mui/material/Tab';
 // }
 
 function Nav () {
-    <Routes>        
-      <Route path="/Home"  element={<Home/>} />
-      <Route path="/Buddies"  element={<buddies />}/>
-    </Routes>
+    // <Routes>        
+    //   <Route path="/Home"  element={<Home/>} />
+    //   <Route path="/Buddies"  element={<buddies />}/>
+    // </Routes>
 }
 
 export default Nav; // Export the component

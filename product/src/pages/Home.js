@@ -1,13 +1,13 @@
 import React from 'react';
 import './Home.css';
-import Nav from '../components/Nav.js';
+// import Nav from '../components/Nav.js';
 import study1 from '../components/assets/study1.png';
 
 
 function Home() {
     return (
         <div id = "home">
-            <Nav></Nav>
+            {/* <Nav></Nav> */}
             <div id = "home-txt">
             <h2>Connect like</h2>
             <h2>never before</h2>
