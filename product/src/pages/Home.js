@@ -4,6 +4,8 @@ import Button from '../components/Button.js'
 import study1 from '../components/assets/study1.png';
 import messy from '../components/assets/messy.png';
 import sprint from '../components/assets/sprint.png';
+import buddy from '../components/assets/buddy.png';
+
 
 
 function Home() {
@@ -46,6 +48,17 @@ function Home() {
                     find your perfect match.</p>
                 </div>
                     
+                </div>
+            </div>
+            <div class = "div-pad">
+                <div id = "buddying">
+                <div id = "home-txt-buddy">
+                <h2>Share</h2>
+                <p>Share your study plans, preferred study environments, and study 
+                    preferences. Let others know what subjects you're
+                    tackling and your study preferences.</p>
+                </div>
+                    <img id = "buddy" src = {buddy} alt='people talking'/>
                 </div>
             </div>
         </div>

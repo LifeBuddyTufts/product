@@ -3,6 +3,7 @@ import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 import Home from '../pages/Home.js';
 import Buddies from '../pages/buddies.js';
 import pup from './assets/pup.png';
+import AboutUs from '../pages/AboutUs.js';
   
 
 function Nav(props) {
@@ -16,12 +17,13 @@ function Nav(props) {
         <div id = "links">
             <NavLink exact activeClassName="active" className="nav-link" to="/">Home</NavLink>
             <NavLink className="nav-link" to="/buddies">Buddies</NavLink>
-            <NavLink className="nav-link" to="/home">Contact</NavLink>
+            <NavLink className="nav-link" to="/AboutUs">About Us</NavLink>
         </div>
         <Routes>
 
             <Route path = "/" index element={<Home />} />
             <Route path="/buddies" element={<Buddies />} />
+            <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
         </BrowserRouter>
         
