@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import '../components/Button.css';
 import Button from '../components/Button.js'
 import study1 from '../components/assets/study1.png';
 import messy from '../components/assets/messy.png';
@@ -16,7 +17,7 @@ function Home() {
                     <h2>never before.</h2>
                     <p>Find your perfect study buddy with just one click</p>
                     
-                    <Button></Button>
+                    <Button className="beginButton" label="Buddy Up!"></Button>
                 </div>
                 <img id = "study1" src = {study1} alt = 'person studying'/>
             

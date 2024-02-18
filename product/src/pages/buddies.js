@@ -2,6 +2,11 @@ import {React, useState} from 'react';
 // import Form from '../components/post/Form.js';
 import PostCard from '../components/post/PostCard';
 import Calendar from 'react-calendar';
+import sarah from '../components/assets/Group 17.png';
+import lilian from '../components/assets/Group 17 (2).png';
+import keiji from '../components/assets/Group 17 (4).png';
+import kiki from '../components/assets/Group 17 (5).png';
+// import ExampleGrid from '../components/post/grid';
 import 'react-calendar/dist/Calendar.css';
 import './Buddies.css'
 
@@ -11,6 +16,10 @@ function Buddies() {
     const changeDate = (e) => {
         setDateState(e)
     }
+    // const handleClick = () => {
+    //     // Define your click handling logic here
+    //     console.log('Button clicked!');
+    // }
     return (
         <div>
             <div id = "pad">
@@ -19,9 +28,84 @@ function Buddies() {
             <Calendar value={dateState}
             onChange={changeDate} id="cal"/>
             {/* <Form></Form> */}
-            <PostCard></PostCard>
+            {/* <ExampleGrid> */}
+            <div className='big-flex'>
+                <div className='small-flex'>
+                    <div className="post-card">
+                       <PostCard 
+                        title="Induction Proofs"
+                        time="Wednesday 7 AM - 3 PM"
+                        description="I’m ready to be stronger than strong induction proofs."
+                        username="@sarahlovesbuddyup"
+                        spotsLeft={2}
+                        // buttonText="Join Now"
+                        numberOfDogs={3} // Specify the number of dog images you want
+                        applyFilter={true} // Set to true to apply filter, false otherwise
+                        // onClick={handleClick}
+                        label="Buddy Up!"
+                        dogsWithFilter={[1,2]}
+                        profile={sarah}
+                        ></PostCard> 
+                    </div>
+                    <div >
+                        <PostCard
+                        title="Osmosis review"
+                        time="Thursday 3:30 PM"
+                        description="I’m not sure what this means, someone please help me!"
+                        username="@thelilliantran"
+                        spotsLeft={5}
+                        // buttonText="Join Now"
+                        numberOfDogs={7} // Specify the number of dog images you want
+                        applyFilter={true} // Set to true to apply filter, false otherwise
+                        // onClick={handleClick}
+                        label="Buddy Up!"
+                        dogsWithFilter={[2, 3, 4, 5 ,6, 7]}
+                        profile={lilian}
+                        ></PostCard>
+                    </div>
+                </div>
+                <div className='small-flex'>
+                    <div className="post-card">
+                       <PostCard 
+                        title="CS 11: pointer"
+                        time="Friday 4 PM"
+                        description="Hey guys, I'm looking for someone to review pointers with! So many levels of indirection..."
+                        username="@kknummy"
+                        spotsLeft={1}
+                        // buttonText="Join Now"
+                        numberOfDogs={1} // Specify the number of dog images you want
+                        applyFilter={true} // Set to true to apply filter, false otherwise
+                        // onClick={handleClick}
+                        label="Buddy Up!"
+                        dogsWithFilter={[0]}
+                        profile={keiji}
+                        ></PostCard> 
+                    </div>
+                    <div >
+                        <PostCard
+                        title="CS 15: Recursion"
+                        time="Monday 8 AM - 10 PM"
+                        description="Looking for someone to jeaopardy with! Reviewing sections 4 - 7"
+                        username="@karen_loves_sarah"
+                        spotsLeft={1}
+                        // buttonText="Join Now"
+                        numberOfDogs={3} // Specify the number of dog images you want
+                        applyFilter={true} // Set to true to apply filter, false otherwise
+                        // onClick={handleClick}
+                        label="Buddy Up!"
+                        dogsWithFilter={[1, 2]}
+                        profile={kiki}
+                        ></PostCard>
+                    </div>
+                </div>
+                
+
+            </div>
         </div>
     );
 }
 
 export default Buddies;
+
+
+  

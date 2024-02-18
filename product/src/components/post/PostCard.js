@@ -3,38 +3,46 @@
 import './PostCard.css';
 import React from 'react';
 import '../Nav.css';
+import dog from '../assets/dog.png';
+import Button from '../Button';
 
 
 
-function PostCard() {
+function PostCard(props) {
 
-    // const [title, setTitle] = useState('')
-    // const [name, setName] = useState('')
-    // const [description, setDescription] = useState('')
-    // const [error, setError] = useState('')
-    // const [buddies, setBuddies] = useState(0)
-    // const myPostData = { ...postData };
-    // const [selectData, setSelectData] = useState([])
+    const { title, time, description, username, spotsLeft, numberOfDogs, applyFilter, label, dogsWithFilter, profile} = props;
 
-    // useEffect( () => {
-    //     fetchData()
-    // },[])
-
-    // const fetchData = async() => {
-    //     await fetch("http://localhost:4000/users")
-    //         .then(res => res.json())
-    //         .then(data => setSelectData(data))
-    //         .catch(err => console.log(err))
-    // };
-
-
+    // Create an array to store the JSX elements of dog images
+    const dogImages = [];
+    for (let i = 0; i < numberOfDogs; i++) {
+        const imgClassName = applyFilter && dogsWithFilter.includes(i) ? 'hide-dog' : '';
+        dogImages.push(<img key={i} src={dog} className={imgClassName} alt='error'></img>);
+    }
     return (
-
         <div className="card">            
-            {/* <div></div> id="title" value="name">Hello</h1> */}
-
-            {/* <span value={item.name}></span>  */}
-        </div>
+                <div className="title">{title}</div>
+                <div className='time'>{time}</div>
+                <div className='middle-section'>
+                    <div className='left-section'>
+                        <div className='description'>{description}</div>
+                        <div className='username'>{username}</div> 
+                    </div>
+                    <div>
+                        <img src={profile} alt='error'></img>
+                    </div>
+                </div>
+                <div>
+                    <span className='number-spots-left'>{spotsLeft}</span>
+                    <span className='number-spots-text'>buddies spots left</span>
+                </div>
+                <div className='dogs-container'>
+                    {dogImages}
+                </div>
+                <div className='button-buddyUp'>
+                    <Button className="postButton" label={label} />
+                    {/* <Button buttonText={buttonText} onClick={onClick} label={label} /> */}
+                </div>
+            </div>  
     )
 };
 
