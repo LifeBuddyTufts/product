@@ -14,6 +14,7 @@ h2 {
 
 .div-pad {
     padding: 0em 6.5em 0em 6.5em;
+
         /* Your default styles here */
     /* animation: fadeIn 0.6s ease-in-out; */
     
@@ -40,7 +41,7 @@ h2 {
 }
 
 
-#home-txt-share {
+#home-txt-share, #home-txt-buddy {
     float: left;
     margin-top: 6em;
     margin-left: 4em;
@@ -69,6 +70,12 @@ h2 {
     width: 100%;
     margin-top: 45em;
     padding-bottom: 10em;
+}
+
+#buddying {
+    width: 100%;
+    margin-top: 8em;
+    padding-bottom: 7em;
 }
 
 #finding {
