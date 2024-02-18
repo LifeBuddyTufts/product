@@ -6,7 +6,7 @@ import './Button.css';
 
 function Button() {
     return (
-        <btn id="My Button">Find a Buddy</btn>
+        <btn id="beginButton">Find my buddy</btn>
     );
 }
 
