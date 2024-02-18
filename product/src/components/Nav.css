@@ -1,8 +1,4 @@
-@font-face {
-    font-family: 'cherry';
-    src: local('CherryBombOne-Regular'),
-         url('./fonts/CherryBombOne-Regular.ttf') format('ttf'), 
-} 
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 #Nav {
     padding: 3em 7em 3em 7em;
     background-color: #FBE0DB;

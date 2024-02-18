@@ -1,0 +1,24 @@
+/* @font-face {
+  font-family: 'cherry';
+  src: local('CherryBombOne-Regular'),
+       url('../fonts/CherryBombOne-Regular.ttf') format('ttf'), 
+}  */
+
+#card {
+    position: relative;
+    width: 432px;
+    height: 405px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 40px;
+    background-color: #37447e;
+    overflow: hidden;
+    align-items: center;
+}
+
+#title {
+  font-size: 30px;
+  color: white;
+  font-family: 'cherry';
+}

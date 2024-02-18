@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import postData from './postData';
-import axios from "axios";
+// import axios from "axios";
 
 function Form() {
 
-    
     const [title, setTitle] = useState('')
     const [name, setName] = useState('')
     const [description, setDescription] = useState('')
@@ -12,9 +11,9 @@ function Form() {
     const [buddies, setBuddies] = useState(0)
     const myPostData = { ...postData };
 
-    const axiosPostData = async() => {
-        await axios.post('http://localhost:4000/users')
-    }
+    // const axiosPostData = async() => {
+    //     await axios.post('http://localhost:4000/users')
+    // }
     
     const handleSubmit = (e) => {
         e.preventDefault()
