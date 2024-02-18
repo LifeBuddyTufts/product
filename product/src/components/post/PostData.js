@@ -1,8 +1,10 @@
-export interface postData {
-    _id: String;
-    title: String;
-    name: String;
-    description: String;
-    time: Date;
-    partners: Number;
-}
+const postData = {
+    _id: "",
+    title: "",
+    name: "",
+    description: "",
+    time: new Date(),
+    buddies: 0
+  };
+
+export default postData;
