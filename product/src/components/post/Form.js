@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import postData from './postData';
 // import axios from "axios";
+import './Form.css';
+// import Button from '../Button.js'
+
+
 
 function Form() {
 
@@ -42,7 +46,7 @@ function Form() {
 
     return (
         <>
-            <h1>Add a study sesh</h1>
+            
  
             <form id= "myForm">
                 <label>Title: 
